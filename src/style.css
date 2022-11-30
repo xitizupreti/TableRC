@@ -1,19 +1,14 @@
-*{
-    padding: 5px;
+.fit {
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-.fit{
-    width: fit-content;
-    height: fit-content;
+.col {
+  text-align: center;
+  width: 40px;
+  min-height: 20px;
+  border: 1px solid #666;
 }
-.row{
-    display: flex;
-    flex-direction: row;
-  }
-  
-.col{
-    width: 100px;
-    min-height: 20px;
-    border: 1px solid #666;
-    font-size: 1vw;
-  }
