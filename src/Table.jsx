@@ -1,38 +1,30 @@
 import React, { useEffect } from "react";
 
-const Table = (rows, cols) => {
+const Table = (row, col) => {
+  let rowArray = [];
+  let columnArray = [];
+  for (let i = 0; i < row; i++) {
+    rowArray = [...rowArray, i];
+  }
+  for (let j = 0; j < col; j++) {
+    columnArray = [...columnArray, j];
+  }
 
   useEffect(() => {
-    console.log();
-  }, [rows, cols]);
-
-  const C = () => {
-    console.log(cols);
-    while (cols != 0) {
-      return (
-        <>
-          <td></td>
-        </>
-      );
-    }
-    cols--;
-  };
-  const R = () => {
-    console.log(rows);
-    while (rows != 0) {
-      return (
-          <tr>{C()}</tr>
-      );
-    }
-    rows--;
-  };
+  }, [row, col]);
 
   return (
-    <>
-      <table>
-        <tbody>{R()}</tbody>
-      </table>
-    </>
+    <div className="fit">
+      {rowArray.map((row, index) => {
+        return (
+          <section className="row" key={index}>
+            {columnArray.map((col, index) => {
+              return <div className="col" key={index}>{row * col + 1}</div>;
+            })}
+          </section>
+        );
+      })}
+    </div>
   );
 };
 
