@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TableRC/static/css/main.97775ada.css",
+    "main.js": "/TableRC/static/js/main.ace7e0cc.js",
+    "index.html": "/TableRC/index.html",
+    "main.97775ada.css.map": "/TableRC/static/css/main.97775ada.css.map",
+    "main.ace7e0cc.js.map": "/TableRC/static/js/main.ace7e0cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97775ada.css",
+    "static/js/main.ace7e0cc.js"
+  ]
+}
